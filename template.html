@@ -1,0 +1,36 @@
+<!-- DO NOT DELETE
+    Access GraphQL query data with {{_.data}}
+    Access the widget id with {{_.id}}
+-->
+<div class="usps--item">
+    <img src="{{ imageUrl.src }}" alt="{{ title }}" />
+    <h5>
+        {{ title }}
+        <span>{{ subtitle }}</span>
+    </h5>
+</div>
+<style>
+    .usps--item {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .usps--item img {
+        max-width: 70px;
+        margin-right: 15px;
+    }
+    .usps--item h5 {
+        font-size: 18px;
+        font-family: 'League Spartan', sans-serif;
+        font-weight: bold;
+        text-transform: none !important;
+        margin: 0;
+    }
+    .usps--item h5 span {
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: 'League Spartan', sans-serif;
+    }
+</style>
